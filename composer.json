@@ -1,0 +1,43 @@
+{
+    "name": "jgile/merge-tailwind",
+    "description": "Merge tailwind classes macro for blade components",
+    "homepage": "https://github.com/jgile/merge-tailwind",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Gile",
+            "email": "me@jgile.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/laravel-ray": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "JGile\\MergeTailwind\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JGile\\MergeTailwind\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MergeTailwindServiceProvider"
+            ]
+        }
+    }
+}
